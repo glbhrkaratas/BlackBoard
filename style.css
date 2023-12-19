@@ -1,0 +1,51 @@
+body{
+    background-color: black;
+    align-self: center;
+    text-align: center;
+}
+
+    .mainArea{
+        margin: 5% auto auto auto;
+        width: 70%;  
+        }
+    
+    .borders{
+        height: fit-content;
+        padding: 10px;
+        background-color: #6B240C;
+        border-radius: 10px;
+        width: fit-content;
+     }
+    
+    .drawArea{
+        width:70vw;
+        height:30rem;
+        background-color: #163020;
+    }
+
+    @media (max-width: 768px) {
+        .mainArea {
+          width: 90%;
+        }
+      
+        .borders {
+          padding: 5px;
+          border-radius: 5px;
+        }
+      
+        .drawArea {
+          width: 90vw;
+          height: 20rem;
+        }
+      }
+      
+      @media (max-width: 480px) {
+        .mainArea {
+          width: 95%;
+        }
+      
+        .drawArea {
+          width: 90vw;
+          height: 15rem;
+        }
+      }

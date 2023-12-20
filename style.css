@@ -5,35 +5,37 @@ body{
 }
 
     .mainArea{
-        margin: 5% auto auto auto;
+        margin: 3% auto auto auto;
         width: 70%;  
         }
     
     .borders{
         height: fit-content;
-        padding: 10px;
+        padding-top: 20px;
+        padding-right: 20px;
+        padding-left: 20px;
         background-color: #6B240C;
         border-radius: 10px;
         width: fit-content;
      }
     
-    .drawArea{
+    #canvas{
+      cursor: url('pencil.ico'), default;
         width:70vw;
         height:30rem;
-        background-color: #163020;
+        position: relative;
     }
 
     @media (max-width: 768px) {
         .mainArea {
           width: 90%;
         }
-      
         .borders {
           padding: 5px;
           border-radius: 5px;
         }
       
-        .drawArea {
+        .canvas {
           width: 90vw;
           height: 20rem;
         }
@@ -44,8 +46,21 @@ body{
           width: 95%;
         }
       
-        .drawArea {
+        .canvas {
           width: 90vw;
           height: 15rem;
         }
+      }
+
+      .eraser{
+        width: 4vw;
+        height: 4vw;
+        padding-top: 10px;
+        margin:auto;
+
+      }
+      #button{
+        width:fit-content;
+        background-color: #6B240C;
+        border:none;
       }

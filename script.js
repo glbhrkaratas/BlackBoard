@@ -61,43 +61,4 @@ function stop(event) {
 ctx.beginPath();
 ctx.stroke();
 
-
-$(document).on("click touchstart", function(event) {
-   function start(event) {
-      drawing = true;
-      ctx.beginPath();
-      ctx.moveTo(
-         event.clientX - canvas.offsetLeft,
-         event.clientY - canvas.offsetTop
-      );
-      event.preventDefault();
-   }
-   function draw(event) {
-      if (drawing) {
-         ctx.lineTo(
-            event.clientX - canvas.offsetLeft,
-            event.clientY - canvas.offsetTop
-         );
-         ctx.strokeStyle = draw_color;
-         ctx.lineWidth = draw_width;
-         ctx.lineCap = "round";
-         ctx.lineJoin = "line";
-         ctx.stroke();
-      }
-      event.preventDefault();
-   }
-   function cancella(ctx) {
-     ctx.clearRect(0, 0, 3000, 3000);
-   }
-   function stop(event) {
-     if (drawing) {
-        ctx.stroke();
-        ctx.closePath();
-        drawing = false;
-     }
-     event.preventDefault();
-   }
-   ctx.beginPath();
-   ctx.stroke();
- });
  
